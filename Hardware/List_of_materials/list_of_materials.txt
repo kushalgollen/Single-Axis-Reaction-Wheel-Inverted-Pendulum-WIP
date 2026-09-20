@@ -1,0 +1,34 @@
+Materials Lists & required parts:
+
+* Simple FOC Shield with integrated esp32 or u can get these parts also separately
+
+* BLDC Gimbal Motor: GM4108H-120T without slip ring and 'H' hollow shaft
+
+* Custom Flywheel: using 3d-printed body mounted with screws
+
+* AS5600 Magnetic Encoder (I2C)
+
+* MPU6050 IMU Gyroscope & Accelerometer (I2C)
+
+* USB-UART Module FTDI232RL or CP2102: to connect esp32 to computer
+
+* LiPo Battery 4s or 6s: I'll be using my DIY benchtop power supply
+
+* Screws: M2.5 or M3, max 3-4mm thread
+
+* Electric wires: silicone, low-resistance and low-noise signal distribution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
