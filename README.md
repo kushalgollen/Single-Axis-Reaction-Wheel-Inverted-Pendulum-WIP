@@ -16,7 +16,7 @@
 
 ---
 
-## 📌 Executive Summary
+## 📌 Overview
 
 This repository is about hardware design, embedded firmware, and control architecture for a single-axis self-balancing reaction wheel inverted pendulum. 
 
@@ -45,7 +45,7 @@ Rather than relying on low-bandwidth stepper motors or standard drone ESCs (whic
 |       v                                                                         |
 |  [Core 1]  FOC Commutation Loop (Voltage/Torque) <-- AS5600 Magnetic Encoder    |
 |       |                                                                         |
-|       +--> 3x IR2104 Half-Bridge Drivers --> 6x Discrete N-MOSFETs (Up to 20A) |
+|       +--> 3x IR2104 Half-Bridge Drivers --> 6x Discrete N-MOSFETs (Up to 20A)  |
 +-------------------------------------+-------------------------------------------+
                                       |
                                   3-Phase
@@ -54,11 +54,10 @@ Rather than relying on low-bandwidth stepper motors or standard drone ESCs (whic
                                       v
                      +----------------------------------+
                      | iPower GM4108H-120T BLDC Motor   |
-                     | (Hollow Shaft, 0.6+ Nm peak)     |
+                     | (Hollow Shaft and no slip ring)  |
                      +-----------------+----------------+
                                        |
                                        v
                      +----------------------------------+
                      | High-Inertia Perimeter Flywheel  |
-                     | (Optimized Radius-to-Mass Ratio) |
                      +----------------------------------+
