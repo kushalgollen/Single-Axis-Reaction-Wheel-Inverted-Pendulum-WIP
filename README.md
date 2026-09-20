@@ -8,10 +8,6 @@
 [![Control](https://img.shields.io/badge/Algorithm-FOC_%2B_Cascaded_PID-green.svg?style=for-the-badge)](#control-theory--architecture)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=for-the-badge)](LICENSE)
 
-<p align="center">
-  <b>A mechatronic testbed designed to explore real-time nonlinear control, high-torque BLDC actuation, and inertial momentum transfer.</b>
-</p>
-
 </div>
 
 ---
