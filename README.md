@@ -18,7 +18,7 @@
 
 ## 📌 Executive Summary
 
-This repository hosts the hardware design, embedded firmware, and control architecture for a single-axis self-balancing reaction wheel inverted pendulum. 
+This repository is about hardware design, embedded firmware, and control architecture for a single-axis self-balancing reaction wheel inverted pendulum. 
 
 Rather than relying on low-bandwidth stepper motors or standard drone ESCs (which lack fine zero-velocity modulation), this project implements true **Field-Oriented Control (FOC)** on an ultra-low KV gimbal motor. By coupling rotor angular acceleration with an attitude estimation loop, the system exchanges angular momentum in real time to stabilize an unstable equilibrium state.
 
