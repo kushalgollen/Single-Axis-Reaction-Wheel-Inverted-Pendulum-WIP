@@ -20,19 +20,10 @@
 
 This repository hosts the hardware design, embedded firmware, and control architecture for a single-axis self-balancing reaction wheel inverted pendulum. 
 
-Rather than relying on low-bandwidth stepper motors or standard drone ESCs (which lack fine zero-velocity modulation), this project implements true **Field-Oriented Control (FOC)** on an ultra-low KV gimbal motor. By coupling rotor angular acceleration with an attitude estimation loop, the system exchanges angular momentum in real time to stabilize an inherently unstable equilibrium state.
+Rather than relying on low-bandwidth stepper motors or standard drone ESCs (which lack fine zero-velocity modulation), this project implements true **Field-Oriented Control (FOC)** on an ultra-low KV gimbal motor. By coupling rotor angular acceleration with an attitude estimation loop, the system exchanges angular momentum in real time to stabilize an unstable equilibrium state.
 
 > ⚠️ **Project Status: Work in Progress (Active R&D Phase)**  
-> Hardware integration, telemetry acquisition, and physical characterization are actively being finalized. Current commits reflect prototype firmware and initial bench validation.
-
----
-
-## 🔬 Core Engineering Highlights
-
-- **Direct-Drive Gimbal Actuation**: Powered by an **iPower GM4108H-120T** high-pole-count BLDC motor running without mechanical reduction to eliminate backlash and deadband.
-- **True Field-Oriented Control (SimpleFOC)**: Sinusoidal current generation via space-vector modulation (SVPWM) enabling seamless bidirectional torque reversal across 0 RPM.
-- **Dual Sensing on a Shared I2C Bus**: High-rate synchronization between an **AS5600** magnetic rotary encoder (rotor commutation feedback) and an **MPU6050** 6-DoF IMU (tilt/attitude tracking).
-- **Dual-Core Asynchronous Pipeline**: ESP32 RTOS architecture allocating motor commutation to an ultra-fast inner loop while delegating filtering and attitude PID loops to the secondary core.
+> Hardware integration, telemetry acquisition, and physical characterization are being finalized. Current commits reflect prototype firmware and initial bench validation.
 
 ---
 
